@@ -160,5 +160,7 @@
     }
 
     if (nome || texto) card.classList.add("is-filled");
+    // só o print (vários comentários reais numa imagem): esconde nome/texto
+    else if (print) card.classList.add("is-print-only");
   });
 })();

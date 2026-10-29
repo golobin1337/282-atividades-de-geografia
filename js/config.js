@@ -16,9 +16,9 @@
  * automaticamente para o checkout.
  */
 window.SITE_CONFIG = {
-  URL_CHECKOUT_BASICO: "",
-  URL_CHECKOUT_COMPLETO: "",
-  URL_CHECKOUT_DESCONTO: "",
+  URL_CHECKOUT_BASICO: "https://pay.wiapy.com/6u50J3HMdrD",
+  URL_CHECKOUT_COMPLETO: "https://pay.wiapy.com/EnUTtB1_CHiq",
+  URL_CHECKOUT_DESCONTO: "https://pay.wiapy.com/rDEbNdCBOXQG",
 
   /**
    * RODAPÉ
@@ -48,14 +48,14 @@ window.SITE_CONFIG = {
   DEPOIMENTOS: [
     // [Nome da professora 1]
     // "[Inserir depoimento real sobre economia de tempo no planejamento.]"
-    { nome: "", texto: "", print: "" },
+    { nome: "", texto: "", print: "assets/img/group_3.webp" },
 
     // [Nome da professora 2]
     // "[Inserir depoimento real sobre participação dos alunos nas atividades.]"
-    { nome: "", texto: "", print: "" },
+    { nome: "", texto: "", print: "assets/img/dep5_big_1.webp" },
 
     // [Nome da professora 3]
     // "[Inserir depoimento real sobre facilidade para imprimir e aplicar.]"
-    { nome: "", texto: "", print: "" }
+    { nome: "", texto: "", print: "assets/img/dep3_big_1.webp" }
   ]
 };
