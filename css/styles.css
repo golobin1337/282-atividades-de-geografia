@@ -344,11 +344,49 @@ a { color: inherit; }
 
 @media (min-width: 860px) { .section-head { margin-bottom: 52px; } }
 
+.eyebrow {
+  font-size: .8125rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--green-700);
+}
+
+/* =========================================================
+   POR QUE ESCOLHER (benefícios)
+   ========================================================= */
+.why { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+.why__card {
+  background: var(--white);
+  border: 1px solid var(--sky-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 16px;
+  display: grid; gap: 8px; align-content: start;
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.why__card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.why__icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--orange); color: var(--navy);
+  box-shadow: 0 6px 14px rgba(255, 159, 67, .35);
+  margin-bottom: 4px;
+}
+.why__icon .i { width: 22px; height: 22px; }
+.why__card h3 { font-size: 1rem; font-weight: 700; }
+.why__card p { font-size: .9rem; line-height: 1.5; color: var(--navy-80); }
+.why__cta { display: flex; justify-content: center; margin-top: 32px; }
+
+@media (min-width: 860px) {
+  .why { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .why__card { padding: 26px 22px; gap: 10px; }
+  .why__card h3 { font-size: 1.125rem; }
+  .why__card p { font-size: .95rem; }
+  .why__cta { margin-top: 44px; }
+}
+
 /* =========================================================
    DOBRA 2 — O QUE VOCÊ RECEBE
    ========================================================= */
-.contents { display: grid; gap: 24px; }
-.contents__media { border-radius: var(--radius-lg); box-shadow: var(--shadow); background-color: var(--white); }
+.contents { display: grid; gap: 24px; max-width: 760px; margin-inline: auto; }
 .contents__body { display: grid; gap: 20px; }
 
 .stages { display: grid; gap: 12px; }
@@ -428,24 +466,14 @@ a { color: inherit; }
 .banner--orange { background: var(--orange); color: var(--navy); box-shadow: var(--shadow-btn); }
 
 @media (min-width: 860px) {
-  .contents { grid-template-columns: .92fr 1.08fr; gap: 40px; align-items: start; }
-  .contents__media { position: sticky; top: 24px; }
   .banner { margin-top: 48px; padding: 24px 32px; }
 }
 
 /* =========================================================
    FOLHAS — carrossel infinito
    ========================================================= */
-.section--blue {
-  background:
-    radial-gradient(rgba(255, 255, 255, .10) 1.2px, transparent 1.4px) 0 0 / 18px 18px,
-    linear-gradient(160deg, #1E88E5, var(--blue) 45%, var(--blue-600));
-}
-.sheets-section { padding-block: 40px; overflow: hidden; }
-.section-head--light { margin-bottom: 12px; }
-.section-head--light h2 { color: var(--white); text-shadow: 0 2px 12px rgba(10, 35, 66, .25); }
-.hl-yellow { color: #FFD54F; }
-@media (min-width: 860px) { .section-head--light { margin-bottom: 20px; } }
+.marquee--sheets { margin: -12px 0 20px; }
+@media (min-width: 860px) { .marquee--sheets { margin: -24px 0 32px; } }
 
 .marquee {
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
@@ -462,12 +490,12 @@ a { color: inherit; }
 
 .sheet {
   position: relative; flex: none;
-  width: 170px; aspect-ratio: 450 / 637;
+  width: 210px; aspect-ratio: 450 / 637;
   margin-right: 18px;
   background: var(--white);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 16px 32px rgba(10, 35, 66, .35);
+  box-shadow: 0 12px 26px rgba(23, 50, 77, .18);
   transform: rotate(-1.5deg);
   transition: transform .3s var(--ease);
 }
@@ -477,8 +505,7 @@ a { color: inherit; }
 .sheet.is-loaded > .sheet__fallback { display: none; }
 
 @media (min-width: 860px) {
-  .sheets-section { padding-block: 56px; }
-  .sheet { width: 230px; margin-right: 28px; }
+  .sheet { width: 280px; margin-right: 32px; }
 }
 
 /* folha decorativa enquanto a imagem não existe */

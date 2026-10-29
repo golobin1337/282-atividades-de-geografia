@@ -117,21 +117,72 @@
         <h2 id="recebe-title">Chega de perder horas procurando atividades na internet!</h2>
         <p>Tenha <strong class="hl-blue">282 atividades e jogos de Geografia</strong> organizadas para escolher, imprimir e aplicar na sua próxima aula.</p>
       </header>
+    </div>
+
+    <!-- Carrossel infinito de folhas: assets/img/folhas/folha-01.webp … folha-09.webp (450×637).
+         Para adicionar/remover folhas, copie ou apague um <li class="sheet">. O loop é montado pelo js/main.js. -->
+    <div class="marquee marquee--sheets" data-marquee>
+      <ul class="marquee__track">
+        <li class="sheet sheet--v1">
+          <img src="assets/img/folhas/folha-01.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v2">
+          <img src="assets/img/folhas/folha-02.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v3">
+          <img src="assets/img/folhas/folha-03.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v4">
+          <img src="assets/img/folhas/folha-04.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v1">
+          <img src="assets/img/folhas/folha-05.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v2">
+          <img src="assets/img/folhas/folha-06.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v3">
+          <img src="assets/img/folhas/folha-07.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v4">
+          <img src="assets/img/folhas/folha-08.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+        <li class="sheet sheet--v1">
+          <img src="assets/img/folhas/folha-09.webp" width="450" height="637" loading="lazy" decoding="async"
+               alt="Página de atividade ilustrada de Geografia"
+               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
+          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
 
       <div class="contents">
-        <!-- Imagem: assets/img/paginas-internas.webp (1000×1100) — páginas internas sobrepostas -->
-        <figure class="contents__media media media--pages" style="--ratio: 10 / 11">
-          <img src="assets/img/paginas-internas.webp" width="1000" height="1100" loading="lazy" decoding="async"
-               alt="Páginas internas com atividades ilustradas de Geografia, mapas, jogos e desafios"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <div class="media__fallback" aria-hidden="true">
-            <span class="pg pg--1"></span>
-            <span class="pg pg--2"></span>
-            <span class="pg pg--3"><span class="pg__map"></span></span>
-            <span class="media__badge"><svg class="i"><use href="#i-map"/></svg></span>
-          </div>
-        </figure>
-
         <div class="contents__body">
           <ul class="stages">
             <li class="stage stage--wide">
@@ -365,70 +416,43 @@
     </div>
   </section>
 
-  <!-- ===================== FOLHAS (carrossel infinito) ===================== -->
-  <!-- Imagens: assets/img/folhas/folha-01.webp … folha-09.webp (450×637, proporção A4).
-       Para adicionar/remover folhas, copie ou apague um <li class="sheet">. O loop é montado pelo js/main.js. -->
-  <section class="section section--blue sheets-section" aria-labelledby="folhas-title">
-    <header class="container section-head section-head--light">
-      <h2 id="folhas-title">Veja o que <span class="hl-yellow">você vai receber</span></h2>
-    </header>
-    <div class="marquee" data-marquee>
-      <ul class="marquee__track">
-        <li class="sheet sheet--v1">
-          <img src="assets/img/folhas/folha-01.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+  <!-- ===================== POR QUE ESCOLHER (benefícios) ===================== -->
+  <section class="section section--sky" aria-labelledby="why-title">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">Por que esse material facilita sua rotina</p>
+        <h2 id="why-title">Menos tempo planejando. <span class="hl-blue">Mais tempo ensinando!</span></h2>
+      </header>
+
+      <ul class="why">
+        <li class="why__card">
+          <span class="why__icon" aria-hidden="true"><svg class="i"><use href="#i-printer"/></svg></span>
+          <h3>Pronto para imprimir e aplicar</h3>
+          <p>Tudo em PDF ilustrado, com impressão ilimitada. É só escolher e levar para a próxima aula.</p>
         </li>
-        <li class="sheet sheet--v2">
-          <img src="assets/img/folhas/folha-02.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        <li class="why__card">
+          <span class="why__icon" aria-hidden="true"><svg class="i"><use href="#i-puzzle"/></svg></span>
+          <h3>Aulas mais divertidas</h3>
+          <p>Jogos, mapas e desafios geográficos que deixam a Geografia mais leve para a turma.</p>
         </li>
-        <li class="sheet sheet--v3">
-          <img src="assets/img/folhas/folha-03.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        <li class="why__card">
+          <span class="why__icon" aria-hidden="true"><svg class="i"><use href="#i-shapes"/></svg></span>
+          <h3>Da Educação Infantil ao 9º ano</h3>
+          <p>Atividades organizadas por ano escolar e tema, fáceis de encontrar.</p>
         </li>
-        <li class="sheet sheet--v4">
-          <img src="assets/img/folhas/folha-04.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
-        </li>
-        <li class="sheet sheet--v1">
-          <img src="assets/img/folhas/folha-05.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
-        </li>
-        <li class="sheet sheet--v2">
-          <img src="assets/img/folhas/folha-06.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
-        </li>
-        <li class="sheet sheet--v3">
-          <img src="assets/img/folhas/folha-07.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
-        </li>
-        <li class="sheet sheet--v4">
-          <img src="assets/img/folhas/folha-08.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
-        </li>
-        <li class="sheet sheet--v1">
-          <img src="assets/img/folhas/folha-09.webp" width="450" height="637" loading="lazy" decoding="async"
-               alt="Página de atividade ilustrada de Geografia"
-               onload="this.parentNode.classList.add('is-loaded')" onerror="this.remove()">
-          <span class="sheet__fallback" aria-hidden="true"><b></b><i></i><i></i><i></i><i></i></span>
+        <li class="why__card">
+          <span class="why__icon" aria-hidden="true"><svg class="i"><use href="#i-book"/></svg></span>
+          <h3>Referências à BNCC</h3>
+          <p>Conteúdo com referências à BNCC e gabaritos, quando aplicáveis.</p>
         </li>
       </ul>
+
+      <div class="why__cta">
+        <a class="btn btn--xl btn--oneline" href="#plano-completo">
+          QUERO MINHAS 282 ATIVIDADES!
+          <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -583,7 +607,15 @@
           <div class="faq__answer"><p>Sim. O material inclui gabaritos, quando aplicáveis, e referências à BNCC adequadas às etapas escolares.</p></div>
         </details>
         <details class="faq__item">
-          <summary><span>6. E se eu não gostar do material?</span><span class="faq__icon" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></summary>
+          <summary><span>6. Já encontro atividades de graça na internet. Por que comprar?</span><span class="faq__icon" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></summary>
+          <div class="faq__answer"><p>Porque aqui você não perde horas procurando em vários sites. São 282 atividades ilustradas de Geografia em um só lugar, organizadas por ano escolar e tema, com gabaritos, quando aplicáveis, e referências à BNCC. É só escolher, imprimir e aplicar.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>7. Tem mensalidade ou alguma cobrança extra?</span><span class="faq__icon" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></summary>
+          <div class="faq__answer"><p>Não. É pagamento único: você paga uma vez e recebe os PDFs no seu E-mail e WhatsApp para baixar e imprimir quantas vezes precisar.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary><span>8. E se eu não gostar do material?</span><span class="faq__icon" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></summary>
           <div class="faq__answer"><p>Você tem 30 dias de garantia. Se não ficar satisfeita, pode solicitar o reembolso integral do valor pago.</p></div>
         </details>
       </div>
