@@ -352,28 +352,34 @@ a { color: inherit; }
 /* =========================================================
    POR QUE ESCOLHER (benefícios)
    ========================================================= */
-.why { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+.why { display: grid; gap: 12px; }
 .why__card {
   background: var(--white);
   border: 1px solid var(--sky-200);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
-  padding: 18px 16px;
-  display: grid; gap: 8px; align-content: start;
+  padding: 18px 18px;
+  display: grid; grid-template-columns: auto 1fr; column-gap: 14px; row-gap: 4px; align-content: start;
   transition: transform .2s var(--ease), box-shadow .2s var(--ease);
 }
 .why__card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .why__icon {
+  grid-row: span 2;
   width: 44px; height: 44px; border-radius: 50%;
   display: grid; place-items: center;
   background: var(--orange); color: var(--navy);
   box-shadow: 0 6px 14px rgba(255, 159, 67, .35);
-  margin-bottom: 4px;
 }
 .why__icon .i { width: 22px; height: 22px; }
-.why__card h3 { font-size: 1rem; font-weight: 700; }
-.why__card p { font-size: .9rem; line-height: 1.5; color: var(--navy-80); }
+.why__card h3 { font-size: 1.0625rem; font-weight: 700; }
+.why__card p { font-size: .95rem; line-height: 1.5; color: var(--navy-80); }
 .why__cta { display: flex; justify-content: center; margin-top: 32px; }
+
+@media (min-width: 560px) {
+  .why { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .why__card { grid-template-columns: 1fr; row-gap: 8px; }
+  .why__icon { grid-row: auto; margin-bottom: 4px; }
+}
 
 @media (min-width: 860px) {
   .why { grid-template-columns: repeat(4, 1fr); gap: 20px; }
