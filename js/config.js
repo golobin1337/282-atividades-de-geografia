@@ -7,7 +7,7 @@
  * console do navegador.
  *
  * Botões → variáveis:
- *   "QUERO MINHAS 282 ATIVIDADES!"        → URL_CHECKOUT_COMPLETO
+ *   "QUERO MINHAS 282 ATIVIDADES!"        → âncora: rola até o card do Plano Completo
  *   "QUERO O PLANO BÁSICO!"               → URL_CHECKOUT_BASICO
  *   "QUERO O PLANO COMPLETO + 5 BÔNUS!"   → URL_CHECKOUT_COMPLETO
  *   "SIM! QUERO O COMPLETO COM DESCONTO!" → URL_CHECKOUT_DESCONTO

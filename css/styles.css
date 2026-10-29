@@ -462,7 +462,7 @@ a { color: inherit; }
 
 .sheet {
   position: relative; flex: none;
-  width: 170px; aspect-ratio: 600 / 848;
+  width: 170px; aspect-ratio: 450 / 637;
   margin-right: 18px;
   background: var(--white);
   border-radius: 8px;
@@ -607,6 +607,7 @@ a { color: inherit; }
    DOBRA 5 — OFERTA
    ========================================================= */
 #planos { scroll-margin-top: 8px; }
+#plano-completo { scroll-margin-top: 32px; } /* espaço para o selo "MAIS VENDIDO" */
 .plans { display: grid; gap: 28px; max-width: 980px; margin-inline: auto; }
 
 .plan {

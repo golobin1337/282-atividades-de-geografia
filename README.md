@@ -16,7 +16,7 @@ Edite `js/config.js`:
 
 | Variável | Botões |
 |---|---|
-| `URL_CHECKOUT_COMPLETO` | "QUERO MINHAS 282 ATIVIDADES!" e "QUERO O PLANO COMPLETO + 5 BÔNUS!" |
+| `URL_CHECKOUT_COMPLETO` | "QUERO O PLANO COMPLETO + 5 BÔNUS!" (o botão do topo, "QUERO MINHAS 282 ATIVIDADES!", é âncora e rola até o card do Plano Completo) |
 | `URL_CHECKOUT_BASICO` | "QUERO O PLANO BÁSICO!" |
 | `URL_CHECKOUT_DESCONTO` | "SIM! QUERO O COMPLETO COM DESCONTO!" |
 
@@ -36,7 +36,7 @@ Salve os arquivos em `assets/img/` com estes nomes. Enquanto um arquivo não exi
 |---|---|---|
 | `hero.webp` | Dobra 1 — mockup principal (capa + páginas), fundo transparente | 848×578 (ideal: 1700×1156 para telas retina) |
 | `paginas-internas.webp` | Dobra 2 — páginas internas sobrepostas | 1000×1100 |
-| `folhas/folha-01.webp` … `folha-12.webp` | Carrossel infinito de folhas (acima dos depoimentos). Para ter mais ou menos folhas, copie ou apague um `<li class="sheet">` no `index.html` | 600×848 (A4) |
+| `folhas/folha-01.webp` … `folha-09.webp` | Carrossel infinito de folhas (acima dos depoimentos). Para ter mais ou menos folhas, copie ou apague um `<li class="sheet">` no `index.html` | 450×637 (A4) |
 | `1.webp` | Bônus 01 — Planner Semanal de Aulas | 557×371 (3:2) |
 | `2.webp` | Bônus 02 — Bingos de Estados e Capitais | 557×371 (3:2) |
 | `3.webp` | Bônus 03 — Quebra-Cabeças de Mapas | 558×372 (3:2) |
